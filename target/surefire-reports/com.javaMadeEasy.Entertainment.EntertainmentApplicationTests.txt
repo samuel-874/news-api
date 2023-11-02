@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.javaMadeEasy.Entertainment.EntertainmentApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 14.398 s <<< FAILURE! - in com.javaMadeEasy.Entertainment.EntertainmentApplicationTests
+testCreatePost  Time elapsed: 0.485 s  <<< ERROR!
+org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class java.time.LocalDateTime]
+	at com.javaMadeEasy.Entertainment.EntertainmentApplicationTests.testCreatePost(EntertainmentApplicationTests.java:89)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.javaMadeEasy.Entertainment.Entity.Post["dateCreated"])
+	at com.javaMadeEasy.Entertainment.EntertainmentApplicationTests.testCreatePost(EntertainmentApplicationTests.java:89)
+
